@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Че звал, Сларк?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="Say_My_Name.jpg" alt="Смешная картинка">
+    <h1>Ну типа, нажми, чтобы посмеяться и пойти нахуй отсюда)</h1>
+    <button onclick="playSound()">посмеяться</button>
+
+    <audio id="funnySound" src="Nu_Tipa_Cmeshno_HaHa.mp3"></audio>
+
+    <script>
+        function playSound() {
+            document.getElementById('funnySound').play();
+        }
+    </script>
+
+</body>
+</html>
